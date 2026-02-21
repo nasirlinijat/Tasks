@@ -1,0 +1,2 @@
+StudentId: 101, Name: Arif, Score: 80.0
+StudentId: 102, Name: Sara, Score: 75.0

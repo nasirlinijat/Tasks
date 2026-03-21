@@ -1,14 +1,15 @@
-package personal.springbootcoursetasks.homework18.setterInjection;
+package personal.springbootcoursetasks.homework18.constructorInjection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Car {
-    private Engine engine;
+    private final Engine engine;
 
     @Autowired
-    public void setEngine(Engine engine){
+    public Car(@Qualifier("petrolEngine") Engine engine) {
         this.engine = engine;
     }
 
